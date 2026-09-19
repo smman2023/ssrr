@@ -3,7 +3,7 @@
 //=========================================
 
 const API =
-"https://https://script.google.com/macros/s/AKfycbyckyrmnfQhuAhUPh8k66EMVoiKHiBC-NZofE9XcJd9zqCs3M-fQiGMRRpTWE7MoA0/exec";
+"https://script.google.com/macros/s/AKfycbyckyrmnfQhuAhUPh8k66EMVoiKHiBC-NZofE9XcJd9zqCs3M-fQiGMRRpTWE7MoA0/exec";
 
 //=========================================
 // Variables
