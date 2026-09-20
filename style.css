@@ -9,16 +9,21 @@
 =========================================*/
 
 *{
+
     margin:0;
     padding:0;
     box-sizing:border-box;
+
 }
 
 body{
 
     font-family:'Cairo',sans-serif;
+
     background:#eef3fb;
+
     direction:rtl;
+
     color:#222;
 
 }
@@ -30,8 +35,11 @@ body{
 .container{
 
     width:95%;
-    max-width:900px;
+
+    max-width:850px;
+
     margin:auto;
+
     padding:20px;
 
 }
@@ -42,8 +50,10 @@ body{
 
 .logo{
 
-    width:120px;
     display:block;
+
+    width:120px;
+
     margin:20px auto;
 
 }
@@ -55,8 +65,11 @@ body{
 .main-title{
 
     text-align:center;
+
     color:#0d47a1;
+
     font-size:34px;
+
     font-weight:800;
 
 }
@@ -64,8 +77,11 @@ body{
 .sub-title{
 
     text-align:center;
-    color:#8B0000
-    font-size:25px;
+
+    color:#555;
+
+    font-size:20px;
+
     margin-top:8px;
 
 }
@@ -73,10 +89,14 @@ body{
 .title-line{
 
     width:120px;
+
     height:5px;
+
     background:#f9a825;
+
     margin:18px auto 30px;
-    border-radius:20px;
+
+    border-radius:10px;
 
 }
 
@@ -93,21 +113,27 @@ body{
 .banner img{
 
     width:100%;
+
     border-radius:20px;
+
     box-shadow:0 8px 25px rgba(0,0,0,.15);
 
 }
 
 /*=========================================
-        Login Box
+        Search Box
 =========================================*/
 
 .search-box{
 
     background:#fff;
+
     padding:25px;
+
     border-radius:20px;
-    box-shadow:0 6px 18px rgba(0,0,0,.10);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.10);
+
     margin-bottom:30px;
 
 }
@@ -115,12 +141,19 @@ body{
 .search-box input{
 
     width:100%;
+
     height:58px;
+
     border:2px solid #ddd;
+
     border-radius:15px;
+
     padding:0 15px;
-    margin-bottom:15px;
+
     font-size:20px;
+
+    margin-bottom:15px;
+
     transition:.30s;
 
 }
@@ -128,6 +161,7 @@ body{
 .search-box input:focus{
 
     outline:none;
+
     border-color:#0d47a1;
 
 }
@@ -135,14 +169,23 @@ body{
 .search-btn{
 
     width:100%;
-    height:58px;
+
+    height:60px;
+
     border:none;
+
     border-radius:15px;
-    cursor:pointer;
-    color:#fff;
-    font-size:22px;
-    font-weight:bold;
+
     background:linear-gradient(135deg,#0d47a1,#1976d2);
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
     transition:.30s;
 
 }
@@ -150,20 +193,24 @@ body{
 .search-btn:hover{
 
     transform:translateY(-2px);
-    box-shadow:0 8px 20px rgba(0,0,0,.20);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
 
 }
-
 /*=========================================
-        Cards
+        Result Card
 =========================================*/
 
 .result-card{
 
     background:#fff;
+
     border-radius:20px;
+
     padding:25px;
+
     margin-top:25px;
+
     box-shadow:0 8px 25px rgba(0,0,0,.12);
 
 }
@@ -171,210 +218,153 @@ body{
 .result-title{
 
     text-align:center;
+
     color:#0d47a1;
+
     font-size:28px;
+
     margin-bottom:25px;
+
     font-weight:800;
 
 }
 
+.result-title i{
+
+    color:#f9a825;
+
+    margin-left:8px;
+
+}
+
+/*=========================================
+        Student Data
+=========================================*/
+
 .result-row{
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
     padding:15px;
+
     border-bottom:1px solid #eee;
+
+    font-size:20px;
+
+}
+
+.result-row:last-child{
+
+    border-bottom:none;
 
 }
 
 .result-label{
 
-    font-weight:bold;
+    font-weight:700;
+
     color:#444;
+
+}
+
+.result-label i{
+
+    color:#0d47a1;
+
+    margin-left:8px;
 
 }
 
 .result-value{
 
-    font-weight:bold;
     color:#000;
 
-}
-
-.hidden{
-
-    display:none;
-
-}
-/*=========================================
-        Video Cards
-=========================================*/
-
-.video-unit{
-
-    margin-top:30px;
-
-}
-
-.video-unit-title{
-
-    background:linear-gradient(135deg,#0d47a1,#1976d2);
-    color:#fff;
-    padding:14px 20px;
-    border-radius:15px;
-    font-size:22px;
-    font-weight:800;
-    margin-bottom:20px;
-
-}
-
-.video-card{
-
-    background:#fff;
-    border-radius:18px;
-    padding:20px;
-    margin-bottom:18px;
-    cursor:pointer;
-    border-right:6px solid #0d47a1;
-    box-shadow:0 8px 20px rgba(0,0,0,.10);
-    transition:.30s;
-
-}
-
-.video-card:hover{
-
-    transform:translateY(-5px);
-    box-shadow:0 15px 30px rgba(0,0,0,.18);
-
-}
-
-.video-header{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:15px;
-
-}
-
-.video-icon{
-
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    background:#e3f2fd;
-    color:#0d47a1;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:28px;
-
-}
-
-.lesson-number{
-
-    color:#0d47a1;
-    font-size:18px;
-    font-weight:700;
-
-}
-
-.lesson-name{
-
-    font-size:23px;
-    font-weight:800;
-    color:#222;
-    margin:15px 0;
-
-}
-
-.watch-btn{
-
-    width:100%;
-    height:55px;
-    border:none;
-    border-radius:14px;
-    background:linear-gradient(135deg,#2e7d32,#43a047);
-    color:#fff;
-    font-size:20px;
     font-weight:bold;
-    cursor:pointer;
-    transition:.30s;
-
-}
-
-.watch-btn:hover{
-
-    background:linear-gradient(135deg,#1b5e20,#2e7d32);
 
 }
 
 /*=========================================
-        Video Player
-=========================================*/
-
-.video-wrapper{
-
-    width:100%;
-    overflow:hidden;
-    border-radius:18px;
-    margin:25px 0;
-    background:#000;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
-
-}
-
-.video-wrapper iframe{
-
-    width:100%;
-    height:520px;
-    border:none;
-
-}
-
-/*=========================================
-        Buttons
+        Attendance Buttons
 =========================================*/
 
 .attendance-btn-box{
 
-    margin-top:18px;
+    margin-top:20px;
 
 }
 
 .attendance-btn{
 
     width:100%;
-    height:56px;
+
+    height:58px;
+
     border:none;
+
     border-radius:15px;
-    background:linear-gradient(135deg,#1976d2,#1565c0);
+
+    background:linear-gradient(135deg,#2e7d32,#43a047);
+
     color:#fff;
-    font-size:20px;
+
+    font-size:21px;
+
     font-weight:bold;
+
     cursor:pointer;
+
     transition:.30s;
+
+    box-shadow:0 6px 15px rgba(46,125,50,.30);
 
 }
 
 .attendance-btn:hover{
 
+    background:linear-gradient(135deg,#1b5e20,#2e7d32);
+
     transform:translateY(-2px);
 
+    box-shadow:0 10px 25px rgba(46,125,50,.45);
+
 }
+
+.attendance-btn i{
+
+    margin-left:10px;
+
+}
+
+/*=========================================
+        Back Button
+=========================================*/
 
 .back-btn{
 
     width:100%;
-    height:56px;
+
+    height:58px;
+
+    margin-top:25px;
+
     border:none;
+
     border-radius:15px;
-    background:linear-gradient(135deg,#d32f2f,#c62828);
+
+    background:linear-gradient(135deg,#c62828,#e53935);
+
     color:#fff;
-    font-size:20px;
+
+    font-size:21px;
+
     font-weight:bold;
+
     cursor:pointer;
+
     transition:.30s;
 
 }
@@ -383,8 +373,210 @@ body{
 
     transform:translateY(-2px);
 
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
 }
 
+/*=========================================
+        Hidden
+=========================================*/
+
+.hidden{
+
+    display:none;
+
+}
+/*=========================================
+        Tables
+=========================================*/
+
+.attendance-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.attendance-table th{
+
+    background:#0d47a1;
+
+    color:#fff;
+
+    padding:15px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.attendance-table td{
+
+    padding:14px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+    font-size:17px;
+
+}
+
+.attendance-table tr:nth-child(even){
+
+    background:#f7f9fc;
+
+}
+
+.attendance-table tr:hover{
+
+    background:#eef5ff;
+
+}
+
+/*=========================================
+        Payment Summary
+=========================================*/
+
+.payment-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.pay-box{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    text-align:center;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.10);
+
+}
+
+.pay-box span{
+
+    display:block;
+
+    font-size:17px;
+
+    color:#666;
+
+    margin-bottom:8px;
+
+}
+
+.pay-box strong{
+
+    font-size:28px;
+
+    color:#0d47a1;
+
+}
+
+/*=========================================
+        Success & Warning
+=========================================*/
+
+.success-box{
+
+    background:#e8f5e9;
+
+    color:#2e7d32;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+.warning-box{
+
+    background:#ffebee;
+
+    color:#c62828;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+.warning-box strong{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:32px;
+
+}
+
+/*=========================================
+        Table Wrapper
+=========================================*/
+
+.table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    direction:ltr;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.table-wrapper table{
+
+    direction:rtl;
+
+    min-width:650px;
+
+}
 /*=========================================
         Not Found
 =========================================*/
@@ -392,6 +584,7 @@ body{
 .not-found{
 
     text-align:center;
+
     padding:40px 20px;
 
 }
@@ -399,7 +592,9 @@ body{
 .not-found i{
 
     font-size:70px;
+
     color:#d32f2f;
+
     margin-bottom:20px;
 
 }
@@ -407,6 +602,9 @@ body{
 .not-found h2{
 
     color:#d32f2f;
+
+    font-size:28px;
+
     line-height:1.8;
 
 }
@@ -418,77 +616,87 @@ body{
 .footer{
 
     margin-top:40px;
+
     background:#0d47a1;
+
     color:#fff;
+
     border-radius:20px;
-    padding:30px;
+
+    padding:30px 20px;
+
     text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
 
 }
 
 .footer h3{
 
     font-size:28px;
+
     margin-bottom:10px;
 
 }
 
 .footer p{
 
-    margin:10px 0;
+    font-size:18px;
+
+    margin:8px 0;
 
 }
 
 .facebook-btn{
 
     display:inline-block;
+
     margin-top:20px;
-    padding:14px 24px;
+
+    padding:14px 25px;
+
     background:#1877f2;
+
     color:#fff;
+
     text-decoration:none;
+
     border-radius:12px;
+
+    font-size:20px;
+
     font-weight:bold;
+
+    transition:.30s;
+
+}
+
+.facebook-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.facebook-btn i{
+
+    margin-left:8px;
 
 }
 
 .copyright{
 
     margin-top:20px;
-    opacity:.8;
+
+    font-size:16px;
+
+    opacity:.85;
 
 }
 
 /*=========================================
-        Animation
-=========================================*/
-
-.result-card,
-.video-card{
-
-    animation:fadeUp .4s ease;
-
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-        transform:translateY(20px);
-
-    }
-
-    to{
-
-        opacity:1;
-        transform:translateY(0);
-
-    }
-
-}
-/*=========================================
-        Responsive Design
+        Responsive
 =========================================*/
 
 @media (max-width:768px){
@@ -496,6 +704,7 @@ body{
 .container{
 
     width:98%;
+
     padding:10px;
 
 }
@@ -518,9 +727,29 @@ body{
 
 }
 
-.title-line{
+.result-title{
 
-    width:90px;
+    font-size:23px;
+
+}
+
+.result-row{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:8px;
+
+    font-size:17px;
+
+}
+
+.result-value{
+
+    width:100%;
+
+    text-align:right;
 
 }
 
@@ -532,130 +761,83 @@ body{
 
 .search-box input{
 
+    font-size:18px;
+
     height:52px;
-    font-size:17px;
 
 }
 
 .search-btn{
 
+    font-size:20px;
+
     height:54px;
+
+}
+
+.attendance-btn{
+
     font-size:18px;
 
-}
-
-.result-card{
-
-    padding:18px;
+    height:54px;
 
 }
 
-.result-title{
+.back-btn{
 
-    font-size:22px;
+    font-size:18px;
 
-}
-
-.result-row{
-
-    flex-direction:column;
-    align-items:flex-start;
-    gap:8px;
-    font-size:17px;
+    height:54px;
 
 }
 
-.result-value{
+/* الجداول */
+
+.table-wrapper{
 
     width:100%;
 
-}
+    overflow-x:auto;
 
-/*=========================
-        Video Cards
-=========================*/
-
-.video-unit-title{
-
-    font-size:19px;
-    padding:12px 15px;
+    -webkit-overflow-scrolling:touch;
 
 }
 
-.video-card{
+.attendance-table{
 
-    padding:16px;
+    min-width:650px;
 
-}
-
-.video-header{
-
-    gap:10px;
+    font-size:15px;
 
 }
 
-.video-icon{
+.attendance-table th{
 
-    width:50px;
-    height:50px;
-    font-size:22px;
+    padding:12px;
 
-}
-
-.lesson-name{
-
-    font-size:19px;
+    font-size:15px;
 
 }
 
-.lesson-number{
+.attendance-table td{
 
-    font-size:16px;
+    padding:12px 8px;
 
-}
-
-.watch-btn{
-
-    height:50px;
-    font-size:18px;
+    font-size:15px;
 
 }
 
-/*=========================
-      Video Player
-=========================*/
+/* بطاقات المدفوعات */
 
-.video-wrapper{
+.payment-summary{
 
-    border-radius:15px;
+    grid-template-columns:1fr;
 
 }
 
-.video-wrapper iframe{
+.pay-box strong{
 
-    height:230px;
-
-}
-
-/*=========================
-        Buttons
-=========================*/
-
-.attendance-btn,
-.back-btn{
-
-    height:50px;
-    font-size:17px;
-
-}
-
-/*=========================
-        Footer
-=========================*/
-
-.footer{
-
-    padding:20px;
+    font-size:24px;
 
 }
 
@@ -667,92 +849,82 @@ body{
 
 .footer p{
 
-    font-size:15px;
+    font-size:16px;
 
 }
 
 .facebook-btn{
 
     width:100%;
+
+    font-size:18px;
+
+}
+
+}
+/*==============================
+بطاقات الهاتف
+==============================*/
+
+.attendance-mobile-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+
+    border-right:6px solid #0d47a1;
+
+}
+
+.card-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.card-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.card-item span{
+
+    color:#0d47a1;
+
+    font-weight:700;
+
     font-size:17px;
 
 }
 
-}
+.card-item strong{
 
-/*=========================================
-      Scrollbar
-=========================================*/
+    color:#222;
 
-::-webkit-scrollbar{
-
-    width:10px;
+    font-size:17px;
 
 }
+.data-card span{
 
-::-webkit-scrollbar-thumb{
-
-    background:#1976d2;
-    border-radius:20px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#e9eef7;
-
-}
-
-/*=========================================
-        Loading
-=========================================*/
-
-.loading{
-
-    text-align:center;
-    padding:40px;
     color:#0d47a1;
-    font-size:22px;
+
     font-weight:bold;
 
 }
-
-.loading i{
-
-    margin-left:8px;
-    animation:spin 1s linear infinite;
-
-}
-
-@keyframes spin{
-
-    from{
-
-        transform:rotate(0deg);
-
-    }
-
-    to{
-
-        transform:rotate(360deg);
-
-    }
-
-}
-
-/*=========================================
-      Active Lesson
-=========================================*/
-
-.video-card.active{
-
-    border-right:8px solid #43a047;
-    background:#f4fff4;
-
-}
-
-.video-card.active .lesson-name{
-
-    color:#2e7d32;
 
 }
