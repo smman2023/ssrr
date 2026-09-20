@@ -3,21 +3,21 @@
 //=========================================
 
 const API_URL =
-"https://script.google.com/macros/s/AKfycby1cp0VMdPigzJWmFAjxMaitQT8b0Zs_VACTSBFWHTgUnEGRXA1ORAcspGtI4x5Pktvcg/exec";
+"https://script.google.com/macros/s/AKfycbxEn5tVTA7KHxqJ9rU2Ery5Dh7qYIu5IGNl1we70WpRF9BzH-aOlPkh3-MJ0_59L3ZSSA/exec";
 
 const ATTENDANCE_API =
-"https://script.google.com/macros/s/AKfycbxXHgrbKasxCOlyzGsVfUxpfGTqvt3ho954GFlZQgpXShFbqE6q03OI1p-9BVJP2Vne/exec";
+"https://script.google.com/macros/s/AKfycbwzQtmEfO1oS3GkQUZF0KeTirkdUqOdMuuaQoO4jU1WSJX_2rFVKN8uDjJN7YIz8aTm/exec";
 
 const HOMEWORK_API =
-"https://script.google.com/macros/s/AKfycbw5QhkoasLNh8LA9tUcT2JZWVHpBkHYD7OWJ7y62rp_krTn0hINkoadW6G9uaskDmwUdw/exec";
+"https://script.google.com/macros/s/AKfycbyGgMFmNMPR6OAWNBemEoTF_jFs1u2AXaWJXFOeA6iVuOlgeJau1DuAutH89h9oP_hC-g/exec";
 
 const EXAM_API =
-"https://script.google.com/macros/s/AKfycby1BGKNC1_PE4rEisy8JU93W2MF3GDV-AcYe6p9EUI5RJIdZItXJAFRfgc4D1oPRl2Vsg/exec";
+"https://script.google.com/macros/s/AKfycbyrSNWCMtLaFZepp3OlxuLip2Pe02X2bndnkbqJE_2DszwwPPKsSnP1wsSlv7pqjvi8fA/exec";
 
 const PAYMENT_API =
-"https://script.google.com/macros/s/AKfycbzm42YUWMPqv_OfcOqV58Nf1zQ0Yw8E_X6dXnWwjZFeKAeiI8kGiNyypTT7cV--Da-y/exec";
+"https://script.google.com/macros/s/AKfycbztZluw5Xl1AJBX_8-FNExLmDz8TqlOJC8zfIIa4A5GoHuLQNorJ81gEKAWVDLZSmGV/exec";
 const NOTICE_API =
-"https://script.google.com/macros/s/AKfycbx1ydSIeyNtk4-hr6J9RH5T3hwytgJtGlWXllUUzw1_KFKp-HnH-ZI9LMOl_-Mc9Nbt/exec";
+"https://script.google.com/macros/s/AKfycbwNYZD5TFj4x3NvqHKPNJgaH_FWxKsDOGRQPFX3VIKO7bdWsuyYPHwUvtigvwNDjazD/exec";
 
 //=========================================
 // Variables
