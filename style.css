@@ -1,928 +1,303 @@
-/*=========================================
-        Google Font
-=========================================*/
+﻿/* ==========================================
+   تنسيقات منصة وبوابة ولي الأمر الإلكترونية
+   ========================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
-
-/*=========================================
-        Reset
-=========================================*/
-
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-
+/* 1. التنسيقات العامة للموقع */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif, system-ui;
 }
 
-body{
-
-    font-family:'Cairo',sans-serif;
-
-    background:#eef3fb;
-
-    direction:rtl;
-
-    color:#222;
-
+body {
+    background-color: #f4f6f9;
+    direction: rtl;
+    text-align: right;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/*=========================================
-        Container
-=========================================*/
-
-.container{
-
-    width:95%;
-
-    max-width:850px;
-
-    margin:auto;
-
-    padding:20px;
-
+/* 2. الهيدر والشعار */
+header {
+    background: #ffffff;
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid #0d52bf;
 }
 
-/*=========================================
-        Logo
-=========================================*/
-
-.logo{
-
-    display:block;
-
-    width:120px;
-
-    margin:20px auto;
-
+.logo-container img {
+    max-width: 130px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-/*=========================================
-        Titles
-=========================================*/
-
-.main-title{
-
-    text-align:center;
-
-    color:#0d47a1;
-
-    font-size:34px;
-
-    font-weight:800;
-
+header h1 {
+    font-size: 24px;
+    color: #1e293b;
+    font-weight: 700;
 }
 
-.sub-title{
-
-    text-align:center;
-
-    color:#555;
-
-    font-size:20px;
-
-    margin-top:8px;
-
+header p {
+    font-size: 15px;
+    color: #64748b;
+    margin-top: 5px;
 }
 
-.title-line{
-
-    width:120px;
-
-    height:5px;
-
-    background:#f9a825;
-
-    margin:18px auto 30px;
-
-    border-radius:10px;
-
+/* 3. صندوق البحث وتسجيل الدخول (المُعدّل) */
+.container {
+    max-width: 650px;
+    width: 90%;
+    margin: 30px auto;
 }
 
-/*=========================================
-        Banner
-=========================================*/
-
-.banner{
-
-    margin-bottom:30px;
-
+.search-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.banner img{
-
-    width:100%;
-
-    border-radius:20px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
-
-}
-
-/*=========================================
-        Search Box
-=========================================*/
-
-.search-box{
-
-    background:#fff;
-
-    padding:25px;
-
-    border-radius:20px;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.10);
-
-    margin-bottom:30px;
-
-}
-
-/* تنسيق خانات الإدخال في صفحة الدخول */
+/* تنسيق خانات إدخال الكود ورقم الواتساب (خط واضح ومحاذاة يمين) */
 .search-box input {
-    direction: rtl !important;           /* جعل الاتجاه من اليمين لليسار */
-    text-align: right !important;        /* محاذاة النص والـ Placeholder لليمين */
-    font-size: 18px !important;          /* تكبير حجم الخط ليكون واضحاً */
-    font-weight: 600 !important;         /* جعل الخط سميكاً (Bold) */
-    padding: 12px 16px !important;       /* إعطاء مساحة داخلية مريحة للعين */
-    color: #2c3e50 !important;           /* لون خط داكن وواضح */
+    width: 100%;
+    padding: 14px 18px !important;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    direction: rtl !important;
+    text-align: right !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
 }
 
-/* تنسيق النص التوضيحي (Placeholder) ليكون واضحاً وعلى اليمين */
+.search-box input:focus {
+    border-color: #0d52bf;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(13, 82, 191, 0.1);
+}
+
+/* تنسيق النص التوضيحي (Placeholder) داخل الخانات */
 .search-box input::placeholder {
     text-align: right !important;
     font-size: 16px !important;
-    font-weight: normal !important;
-    color: #7f8c8d !important;
+    font-weight: 500 !important;
+    color: #94a3b8 !important;
+    direction: rtl !important;
 }
 
-.search-box input:focus{
-
-    outline:none;
-
-    border-color:#0d47a1;
-
-}
-
-.search-btn{
-
-    width:100%;
-
-    height:60px;
-
-    border:none;
-
-    border-radius:15px;
-
-    background:linear-gradient(135deg,#0d47a1,#1976d2);
-
-    color:#fff;
-
-    font-size:22px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.30s;
-
-}
-
-.search-btn:hover{
-
-    transform:translateY(-2px);
-
-    box-shadow:0 10px 25px rgba(0,0,0,.18);
-
-}
-/*=========================================
-        Result Card
-=========================================*/
-
-.result-card{
-
-    background:#fff;
-
-    border-radius:20px;
-
-    padding:25px;
-
-    margin-top:25px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.12);
-
-}
-
-.result-title{
-
-    text-align:center;
-
-    color:#0d47a1;
-
-    font-size:28px;
-
-    margin-bottom:25px;
-
-    font-weight:800;
-
-}
-
-.result-title i{
-
-    color:#f9a825;
-
-    margin-left:8px;
-
-}
-
-/*=========================================
-        Student Data
-=========================================*/
-
-.result-row{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:15px;
-
-    border-bottom:1px solid #eee;
-
-    font-size:20px;
-
-}
-
-.result-row:last-child{
-
-    border-bottom:none;
-
-}
-
-.result-label{
-
-    font-weight:700;
-
-    color:#444;
-
-}
-
-.result-label i{
-
-    color:#0d47a1;
-
-    margin-left:8px;
-
-}
-
-.result-value{
-
-    color:#000;
-
-    font-weight:bold;
-
-}
-
-/*=========================================
-        Attendance Buttons
-=========================================*/
-
-.attendance-btn-box{
-
-    margin-top:20px;
-
-}
-
-.attendance-btn{
-
-    width:100%;
-
-    height:58px;
-
-    border:none;
-
-    border-radius:15px;
-
-    background:linear-gradient(135deg,#2e7d32,#43a047);
-
-    color:#fff;
-
-    font-size:21px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.30s;
-
-    box-shadow:0 6px 15px rgba(46,125,50,.30);
-
-}
-
-.attendance-btn:hover{
-
-    background:linear-gradient(135deg,#1b5e20,#2e7d32);
-
-    transform:translateY(-2px);
-
-    box-shadow:0 10px 25px rgba(46,125,50,.45);
-
-}
-
-.attendance-btn i{
-
-    margin-left:10px;
-
-}
-
-/*=========================================
-        Back Button
-=========================================*/
-
-.back-btn{
-
-    width:100%;
-
-    height:58px;
-
-    margin-top:25px;
-
-    border:none;
-
-    border-radius:15px;
-
-    background:linear-gradient(135deg,#c62828,#e53935);
-
-    color:#fff;
-
-    font-size:21px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.30s;
-
-}
-
-.back-btn:hover{
-
-    transform:translateY(-2px);
-
-    box-shadow:0 10px 25px rgba(0,0,0,.18);
-
-}
-
-/*=========================================
-        Hidden
-=========================================*/
-
-.hidden{
-
-    display:none;
-
-}
-/*=========================================
-        Tables
-=========================================*/
-
-.attendance-table{
-
-    width:100%;
-
-    border-collapse:collapse;
-
-    margin-top:20px;
-
-    background:#fff;
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-
-}
-
-.attendance-table th{
-
-    background:#0d47a1;
-
-    color:#fff;
-
-    padding:15px;
-
-    text-align:center;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-}
-
-.attendance-table td{
-
-    padding:14px;
-
-    text-align:center;
-
-    border-bottom:1px solid #eee;
-
-    font-size:17px;
-
-}
-
-.attendance-table tr:nth-child(even){
-
-    background:#f7f9fc;
-
-}
-
-.attendance-table tr:hover{
-
-    background:#eef5ff;
-
-}
-
-/*=========================================
-        Payment Summary
-=========================================*/
-
-.payment-summary{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:15px;
-
-    margin-bottom:25px;
-
-}
-
-.pay-box{
-
-    background:#fff;
-
-    border-radius:15px;
-
-    padding:18px;
-
-    text-align:center;
-
-    box-shadow:0 6px 18px rgba(0,0,0,.10);
-
-}
-
-.pay-box span{
-
-    display:block;
-
-    font-size:17px;
-
-    color:#666;
-
-    margin-bottom:8px;
-
-}
-
-.pay-box strong{
-
-    font-size:28px;
-
-    color:#0d47a1;
-
-}
-
-/*=========================================
-        Success & Warning
-=========================================*/
-
-.success-box{
-
-    background:#e8f5e9;
-
-    color:#2e7d32;
-
-    padding:18px;
-
-    border-radius:15px;
-
-    text-align:center;
-
-    font-size:22px;
-
-    font-weight:bold;
-
-    margin-bottom:20px;
-
-}
-
-.warning-box{
-
-    background:#ffebee;
-
-    color:#c62828;
-
-    padding:18px;
-
-    border-radius:15px;
-
-    text-align:center;
-
-    font-size:22px;
-
-    font-weight:bold;
-
-    margin-bottom:20px;
-
-}
-
-.warning-box strong{
-
-    display:block;
-
-    margin-top:10px;
-
-    font-size:32px;
-
-}
-
-/*=========================================
-        Table Wrapper
-=========================================*/
-
-.table-wrapper{
-
-    width:100%;
-
-    overflow-x:auto;
-
-    direction:ltr;
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.table-wrapper table{
-
-    direction:rtl;
-
-    min-width:650px;
-
-}
-/*=========================================
-        Not Found
-=========================================*/
-
-.not-found{
-
-    text-align:center;
-
-    padding:40px 20px;
-
-}
-
-.not-found i{
-
-    font-size:70px;
-
-    color:#d32f2f;
-
-    margin-bottom:20px;
-
-}
-
-.not-found h2{
-
-    color:#d32f2f;
-
-    font-size:28px;
-
-    line-height:1.8;
-
-}
-
-/*=========================================
-        Footer
-=========================================*/
-
-.footer{
-
-    margin-top:40px;
-
-    background:#0d47a1;
-
-    color:#fff;
-
-    border-radius:20px;
-
-    padding:30px 20px;
-
-    text-align:center;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
-
-}
-
-.footer h3{
-
-    font-size:28px;
-
-    margin-bottom:10px;
-
-}
-
-.footer p{
-
-    font-size:18px;
-
-    margin:8px 0;
-
-}
-
-.facebook-btn{
-
-    display:inline-block;
-
-    margin-top:20px;
-
-    padding:14px 25px;
-
-    background:#1877f2;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    border-radius:12px;
-
-    font-size:20px;
-
-    font-weight:bold;
-
-    transition:.30s;
-
-}
-
-.facebook-btn:hover{
-
-    transform:translateY(-2px);
-
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
-
-}
-
-.facebook-btn i{
-
-    margin-left:8px;
-
-}
-
-.copyright{
-
-    margin-top:20px;
-
-    font-size:16px;
-
-    opacity:.85;
-
-}
-
-/*=========================================
-        Responsive
-=========================================*/
-
-@media (max-width:768px){
-
-.container{
-
-    width:98%;
-
-    padding:10px;
-
-}
-
-.logo{
-
-    width:90px;
-
-}
-
-.main-title{
-
-    font-size:26px;
-
+/* زر الاستعلام */
+.search-btn {
+    background-color: #0d52bf;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.sub-title{
-
-    font-size:17px;
-
-}
-
-.result-title{
-
-    font-size:23px;
-
-}
-
-.result-row{
-
-    flex-direction:column;
-
-    align-items:flex-start;
-
-    gap:8px;
-
-    font-size:17px;
-
-}
-
-.result-value{
-
-    width:100%;
-
-    text-align:right;
-
-}
-
-.search-box{
-
-    padding:18px;
-
-}
-
-.search-box input{
-
-    font-size:18px;
-
-    height:52px;
-
-}
-
-.search-btn{
-
-    font-size:20px;
-
-    height:54px;
-
-}
-
-.attendance-btn{
-
-    font-size:18px;
-
-    height:54px;
-
-}
-
-.back-btn{
-
-    font-size:18px;
-
-    height:54px;
-
-}
-
-/* الجداول */
-
-.table-wrapper{
-
-    width:100%;
-
-    overflow-x:auto;
-
-    -webkit-overflow-scrolling:touch;
-
-}
-
-.attendance-table{
-
-    min-width:650px;
-
-    font-size:15px;
-
-}
-
-.attendance-table th{
-
-    padding:12px;
-
-    font-size:15px;
-
-}
-
-.attendance-table td{
-
-    padding:12px 8px;
-
-    font-size:15px;
-
-}
-
-/* بطاقات المدفوعات */
-
-.payment-summary{
-
-    grid-template-columns:1fr;
-
-}
-
-.pay-box strong{
-
-    font-size:24px;
-
+.search-btn:hover {
+    background-color: #093c8e;
 }
-
-.footer h3{
 
-    font-size:22px;
-
+.search-btn:active {
+    transform: scale(0.98);
 }
-
-.footer p{
 
-    font-size:16px;
-
+.search-btn:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
 }
-
-.facebook-btn{
 
-    width:100%;
-
-    font-size:18px;
-
+/* 4. كروت عرض بيانات الطالب والنتائج */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    animation: fadeIn 0.4s ease-in-out;
 }
 
+.hidden {
+    display: none !important;
 }
-/*==============================
-بطاقات الهاتف
-==============================*/
-
-.attendance-mobile-card{
-
-    background:#ffffff;
-
-    border-radius:18px;
-
-    padding:18px;
 
-    margin-bottom:18px;
-
-    box-shadow:0 6px 18px rgba(0,0,0,.12);
-
-    border-right:6px solid #0d47a1;
-
+/* بطاقة الطالب الأساسية */
+.student-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
 }
-
-.card-item{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
 
-    padding:12px 0;
-
-    border-bottom:1px solid #ececec;
-
+.info-item {
+    background: #f8fafc;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-right: 4px solid #0d52bf;
 }
-
-.card-item:last-child{
 
-    border-bottom:none;
-
+.info-item label {
+    font-size: 13px;
+    color: #64748b;
+    display: block;
+    margin-bottom: 3px;
 }
-
-.card-item span{
-
-    color:#0d47a1;
 
-    font-weight:700;
-
-    font-size:17px;
-
+.info-item span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
 }
-
-.card-item strong{
 
-    color:#222;
-
-    font-size:17px;
-
+/* 5. شبكة أزرار أقسام المتابعة (الحضور، الواجبات، إلخ) */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
 }
-.data-card span{
-
-    color:#0d47a1;
-
-    font-weight:bold;
 
+.nav-btn {
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
+.nav-btn i {
+    font-size: 20px;
+    color: #0d52bf;
+}
+
+.nav-btn:hover {
+    background-color: #0d52bf;
+    color: #ffffff;
+    border-color: #0d52bf;
+}
+
+.nav-btn:hover i {
+    color: #ffffff;
+}
+
+/* 6. الجداول وتصميم عرض البيانات */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.data-table th {
+    background-color: #0d52bf;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* زر الرجوع داخل البطاقات */
+.back-btn {
+    background-color: #dc2626;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background-color: #b91c1c;
+}
+
+/* 7. صندوق رسائل الخطأ والتنبيهات */
+.not-found-card {
+    background-color: #ffffff;
+    border-right: 5px solid #dc2626;
+    color: #991b1b;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.08);
+}
+
+.not-found-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* 8. حركة ظهور العناصر (Animation) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 9. تحسينات الهواتف والشاشات الصغيرة */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: 15px auto;
+    }
+    
+    .search-box {
+        padding: 18px;
+    }
+    
+    .search-box input {
+        font-size: 16px !important;
+        padding: 12px 14px !important;
+    }
+    
+    .buttons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
