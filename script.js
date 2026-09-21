@@ -3,7 +3,7 @@
 //=========================================
 
 const API_URL =
-"https://script.google.com/macros/s/AKfycbxEn5tVTA7KHxqJ9rU2Ery5Dh7qYIu5IGNl1we70WpRF9BzH-aOlPkh3-MJ0_59L3ZSSA/exec";
+"https://script.google.com/macros/s/AKfycbwwbhxb9Mu3T_zCyX9-Nmihcr22iYXvLFcrwhq5VfYjaw93-gIKcWhHQxGDOnGJvnjTjg/exec";
 
 const ATTENDANCE_API =
 "https://script.google.com/macros/s/AKfycbwzQtmEfO1oS3GkQUZF0KeTirkdUqOdMuuaQoO4jU1WSJX_2rFVKN8uDjJN7YIz8aTm/exec";
@@ -295,43 +295,42 @@ noticeBtn.classList.remove("hidden");
 // البحث عن الطالب
 //=========================================
 
+//=========================================
+// البحث عن الطالب (باستخدام الكود ورقم الواتساب)
+//=========================================
+
 function searchStudent(){
 
     const code = codeInput.value.trim();
 
-    const password = passwordInput.value.trim();
+    // نأخذ رقم الواتساب المكتوب ونزيل أي مسافات
+    const phoneInput = passwordInput.value.trim();
 
-    if(code==="" || password===""){
+    if(code === "" || phoneInput === ""){
 
-        alert("برجاء إدخال كود الطالب والرقم السري");
+        alert("برجاء إدخال كود الطالب ورقم واتساب الطالب أو ولي الأمر");
 
         return;
 
     }
 
     // إخفاء جميع الصفحات
-
     result.classList.add("hidden");
-
     attendanceCard.classList.add("hidden");
-
     homeworkCard.classList.add("hidden");
-
     examCard.classList.add("hidden");
-
     paymentCard.classList.add("hidden");
-
+    noticeCard.classList.add("hidden");
     notFound.classList.add("hidden");
 
-    // البحث
+    // البحث عن الطالب بالتحقق من كود الطالب مع (واتساب الطالب أَوْ واتساب ولي الأمر)
+    const student = students.find(item => {
+        const itemCode = String(item.code || "").trim();
+        const studentWa = String(item.studentWhatsapp || "").trim();
+        const parentWa = String(item.parentWhatsapp || "").trim();
 
-    const student = students.find(item =>
-
-        String(item.code).trim()===code &&
-
-        String(item.password).trim()===password
-
-    );
+        return itemCode === code && (studentWa === phoneInput || parentWa === phoneInput);
+    });
 
     if(!student){
 
@@ -343,7 +342,7 @@ function searchStudent(){
 
             <strong>
 
-            كود الطالب أو كلمة السر غير صحيحة
+            كود الطالب أو رقم الواتساب غير صحيح
 
             </strong>
 
