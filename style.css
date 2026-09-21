@@ -138,24 +138,22 @@ body{
 
 }
 
-.search-box input{
+/* تنسيق خانات الإدخال في صفحة الدخول */
+.search-box input {
+    direction: rtl !important;           /* جعل الاتجاه من اليمين لليسار */
+    text-align: right !important;        /* محاذاة النص والـ Placeholder لليمين */
+    font-size: 18px !important;          /* تكبير حجم الخط ليكون واضحاً */
+    font-weight: 600 !important;         /* جعل الخط سميكاً (Bold) */
+    padding: 12px 16px !important;       /* إعطاء مساحة داخلية مريحة للعين */
+    color: #2c3e50 !important;           /* لون خط داكن وواضح */
+}
 
-    width:100%;
-
-    height:58px;
-
-    border:2px solid #ddd;
-
-    border-radius:15px;
-
-    padding:0 15px;
-
-    font-size:20px;
-
-    margin-bottom:15px;
-
-    transition:.30s;
-
+/* تنسيق النص التوضيحي (Placeholder) ليكون واضحاً وعلى اليمين */
+.search-box input::placeholder {
+    text-align: right !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    color: #7f8c8d !important;
 }
 
 .search-box input:focus{
